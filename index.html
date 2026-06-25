@@ -635,8 +635,8 @@ function exportPNG() {
       <div class="report-title">CKD China Battery Shipment Status</div>
       <div class="report-meta">
         <span class="meta-chip">Updated <strong>25 Jun 2026</strong></span>
-        <span class="meta-chip"><strong>3</strong> Active Shipments</span>
-        <span class="meta-chip"><strong>16,307</strong> Units in Pipeline</span>
+        <span class="meta-chip"><strong>4</strong> Active Shipments</span>
+        <span class="meta-chip"><strong>21,793</strong> Units in Pipeline</span>
       </div>
     </div>
   </div>
@@ -691,7 +691,7 @@ function exportPNG() {
       <thead>
         <tr class="matrix-hdr-top">
           <th rowspan="2" class="matrix-sku-hdr">SKU / Model</th>
-          <th colspan="3" class="matrix-ships-span">Incoming by Shipment</th>
+          <th colspan="4" class="matrix-ships-span">Incoming by Shipment</th>
           <th rowspan="2" class="matrix-total-hdr">Total<br>Incoming<br>Cells</th>
           <th rowspan="2" class="matrix-notes-hdr">Customer / Notes</th>
         </tr>
@@ -717,8 +717,17 @@ function exportPNG() {
             <th class="ship-col factory-col">
               <div class="scol-id">S#57</div>
               <div class="scol-status factory-lbl">At Factory</div>
-              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-06</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-06,07</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">15 Jun 2026</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">TBC</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">TBC</span></div>
+              <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">TBC</span></div>
+            </th>
+            <th class="ship-col factory-col">
+              <div class="scol-id">S#58</div>
+              <div class="scol-status factory-lbl">At Factory</div>
+              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-08</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">25 Jul 2026</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">TBC</span></div>
               <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">TBC</span></div>
               <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">TBC</span></div>
@@ -820,7 +829,7 @@ function exportPNG() {
 
       <div class="ship-card status-factory">
         <div class="ship-head">
-          <div><div class="ship-id">S#57</div><div class="ship-po">CKD 2026-06</div></div>
+          <div><div class="ship-id">S#57</div><div class="ship-po">CKD 2026-06,07</div></div>
           <span class="status-pill factory">Production in progress</span>
         </div>
         <div class="tl-wrap"><div class="tl">
@@ -858,6 +867,47 @@ function exportPNG() {
             </tbody></table>
         </div>
       </div>
+
+      <div class="ship-card status-factory">
+        <div class="ship-head">
+          <div><div class="ship-id">S#58</div><div class="ship-po">CKD 2026-08</div></div>
+          <span class="status-pill factory">Production in progress</span>
+        </div>
+        <div class="tl-wrap"><div class="tl">
+            <div class="tl-track"><div class="tl-fill" style="width:17%"></div></div>
+            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At Factory</div></div>
+            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route to<br>China Port</div></div>
+            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">At China<br>Port</div></div>
+            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route<br>to MY</div></div>
+            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">Port Klang</div></div>
+          </div></div>
+        <div class="ship-meta">
+          <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">TBC</span></div>
+          <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">TBC</span></div>
+          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">5,486</span></div>
+        </div>
+        <div class="ship-notes">Production in progress</div>
+        <button class="items-toggle" onclick="toggleItems(this)">
+          <span>11 SKUs · 5,486 cells total</span>
+          <svg class="toggle-arr" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="items-body">
+          <table class="items-tbl"><thead><tr><th>SKU</th><th>Customer / Notes</th><th>Qty</th></tr></thead>
+            <tbody>
+              <tr><td><span class="sku-badge">KAP 1</span></td><td>—</td><td>2,000</td></tr>
+              <tr><td><span class="sku-badge">KAP 2</span></td><td>—</td><td>1,000</td></tr>
+              <tr><td><span class="sku-badge">KAP 5</span></td><td>—</td><td>350</td></tr>
+              <tr><td><span class="sku-badge">KAP 13</span></td><td><div class="note-txt">Hyper E-Mech - Spare Part</div></td><td>1</td></tr>
+              <tr><td><span class="sku-badge">KAP 20</span></td><td><div class="note-txt">RA Power - Spare Part</div></td><td>1</td></tr>
+              <tr><td><span class="sku-badge">KPX 20</span></td><td>—</td><td>420</td></tr>
+              <tr><td><span class="sku-badge">KPX 30</span></td><td><div class="note-txt">Express Mission = 420 cells</div></td><td>1,000</td></tr>
+              <tr><td><span class="sku-badge">KPX 40</span></td><td>—</td><td>420</td></tr>
+              <tr><td><span class="sku-badge">KPX 50</span></td><td>—</td><td>84</td></tr>
+              <tr><td><span class="sku-badge">KPX 160</span></td><td><div class="note-txt">IT Usaha - ADU6 DC</div></td><td>126</td></tr>
+              <tr><td><span class="sku-badge">KPX 230</span></td><td><div class="note-txt">WDG - EXSIM 4  (4-Terminal)</div></td><td>84</td></tr>
+            </tbody></table>
+        </div>
+      </div>
   </div>
 
 </main>
@@ -876,26 +926,30 @@ function exportPNG() {
 const SHIPS = [
   ['S#55','chip-arrived','En Route to MY','30 Jun 2026'],
   ['S#56','chip-transit','At China Port','06 Jul 2026'],
-  ['S#57','chip-factory','At Factory','TBC']
+  ['S#57','chip-factory','At Factory','TBC'],
+  ['S#58','chip-factory','At Factory','TBC']
 ];
 const SKU_DATA = [
-  ['KAP 1', 0, 3000, 2000, ''],
-  ['KAP 2', 0, 2000, 1000, ''],
-  ['KAP 3', 0, 1000, 0, ''],
-  ['KAP 4', 0, 0, 1200, '200cells (S#54--&gt;S#57)'],
-  ['KAP 20', 0, 0, 176, 'ETD Energy - LSS Sg. Siput, Perak'],
-  ['KAP 35', 0, 0, 174, 'CBH - Next DC 132kV'],
-  ['KPX 20', 0, 420, 420, ''],
-  ['KPX 30', 0, 630, 0, ''],
-  ['KPX 40', 0, 315, 0, ''],
-  ['KPX 50', 0, 315, 0, ''],
-  ['KPX 70', 0, 210, 0, ''],
-  ['KPX 120', 0, 0, 252, 'RTS, Johor -Hong Tak =252 cells'],
-  ['KPX 140', 0, 0, 147, 'RTS, Johor -Hong Tak =147 cells'],
-  ['KPX 160', 0, 0, 63, 'manyi Energy = 21 cells; Hong Tak = 42 cells'],
-  ['KPX 170', 0, 0, 61, 'Hong Seng YTL Nangka AOE Power YTL Apricot (4 sets) [440 in S54, 40 in S57]'],
-  ['KPX 190', 2296, 624, 0, 'AOE POWER YTL APRICOT 148 SETS (PART 1); AOE POWER YTL APRICOT 148 SETS (PART 2)'],
-  ['L150P', 0, 0, 4, 'Tenaga Poly - Genting']
+  ['KAP 1', 0, 3000, 2000, 2000, ''],
+  ['KAP 2', 0, 2000, 1000, 1000, ''],
+  ['KAP 3', 0, 1000, 0, 0, ''],
+  ['KAP 4', 0, 0, 1200, 0, '200cells (S#54--&gt;S#57)'],
+  ['KAP 5', 0, 0, 0, 350, ''],
+  ['KAP 13', 0, 0, 0, 1, 'Hyper E-Mech - Spare Part'],
+  ['KAP 20', 0, 0, 176, 1, 'ETD Energy - LSS Sg. Siput, Perak; RA Power - Spare Part'],
+  ['KAP 35', 0, 0, 174, 0, 'CBH - Next DC 132kV'],
+  ['KPX 20', 0, 420, 420, 420, ''],
+  ['KPX 30', 0, 630, 0, 1000, 'Express Mission = 420 cells'],
+  ['KPX 40', 0, 315, 0, 420, ''],
+  ['KPX 50', 0, 315, 0, 84, ''],
+  ['KPX 70', 0, 210, 0, 0, ''],
+  ['KPX 120', 0, 0, 252, 0, 'RTS, Johor -Hong Tak =252 cells'],
+  ['KPX 140', 0, 0, 147, 0, 'RTS, Johor -Hong Tak =147 cells'],
+  ['KPX 160', 0, 0, 63, 126, 'manyi Energy = 21 cells; Hong Tak = 42 cells; IT Usaha - ADU6 DC'],
+  ['KPX 170', 0, 0, 61, 0, 'Hong Seng YTL Nangka AOE Power YTL Apricot (4 sets) [440 in S54, 40 in S57]'],
+  ['KPX 190', 2296, 624, 0, 0, 'AOE POWER YTL APRICOT 148 SETS (PART 1); AOE POWER YTL APRICOT 148 SETS (PART 2)'],
+  ['KPX 230', 0, 0, 0, 84, 'WDG - EXSIM 4  (4-Terminal)'],
+  ['L150P', 0, 0, 4, 0, 'Tenaga Poly - Genting']
 ];
 
 // ── Item expand/collapse ───────────────────────────────────

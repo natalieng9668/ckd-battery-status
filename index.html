@@ -696,9 +696,9 @@ function exportPNG() {
           <th rowspan="2" class="matrix-notes-hdr">Customer / Notes</th>
         </tr>
         <tr class="matrix-hdr-sub">
-            <th class="ship-col factory-col">
+            <th class="ship-col transit-col">
               <div class="scol-id">S#60</div>
-              <div class="scol-status factory-lbl">At Factory</div>
+              <div class="scol-status transit-lbl">At China Port</div>
               <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-12</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">15 Oct 2026</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">22 Oct 2026</span></div>
@@ -748,16 +748,16 @@ function exportPNG() {
 
   <div class="ships-grid">
 
-      <div class="ship-card status-factory">
+      <div class="ship-card status-transit">
         <div class="ship-head">
           <div><div class="ship-id">S#60</div><div class="ship-po">CKD 2026-12</div></div>
-          <span class="status-pill factory">Production in progress</span>
+          <span class="status-pill transit">At China port</span>
         </div>
         <div class="tl-wrap"><div class="tl">
-            <div class="tl-track"><div class="tl-fill" style="width:17%"></div></div>
-            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At Factory</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route to<br>China Port</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">At China<br>Port</div></div>
+            <div class="tl-track"><div class="tl-fill" style="width:66%"></div></div>
+            <div class="tl-step"><div class="tl-dot done"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tl-lbl done">At Factory</div></div>
+            <div class="tl-step"><div class="tl-dot done"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tl-lbl done">En Route to<br>China Port</div></div>
+            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At China<br>Port</div></div>
             <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route<br>to MY</div></div>
             <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">Port Klang</div></div>
           </div></div>
@@ -880,7 +880,7 @@ function exportPNG() {
 
 <script>
 const SHIPS = [
-  ['S#60','chip-factory','At Factory','19 Nov 2026'],
+  ['S#60','chip-transit','At China Port','19 Nov 2026'],
   ['S#61','chip-factory','At Factory','TBC'],
   ['S#62','chip-factory','At Factory','TBC']
 ];

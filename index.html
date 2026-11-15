@@ -634,7 +634,7 @@ function exportPNG() {
       <div class="report-label">Inbound Shipment Report</div>
       <div class="report-title">CKD China Battery Shipment Status</div>
       <div class="report-meta">
-        <span class="meta-chip">Updated <strong>12 Nov 2026</strong></span>
+        <span class="meta-chip">Updated <strong>15 Nov 2026</strong></span>
         <span class="meta-chip"><strong>4</strong> Active Shipments</span>
         <span class="meta-chip"><strong>26,530</strong> Units in Pipeline</span>
       </div>
@@ -701,18 +701,18 @@ function exportPNG() {
               <div class="scol-status transit-lbl">At China Port</div>
               <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-12,13</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">25 Oct 2026</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">12 Nov 2026</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">14 Nov 2026</span></div>
               <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">11 Nov 2026</span></div>
               <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">18 Nov 2026</span></div>
             </th>
-            <th class="ship-col factory-col">
+            <th class="ship-col transit-col">
               <div class="scol-id">S#62</div>
-              <div class="scol-status factory-lbl">At Factory</div>
+              <div class="scol-status transit-lbl">At China Port</div>
               <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-13</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">10 Nov 2026</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">14 Nov 2026</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">23 Nov 2026</span></div>
-              <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">30 Nov 2026</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">TBC</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">TBC</span></div>
+              <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">TBC</span></div>
             </th>
             <th class="ship-col factory-col">
               <div class="scol-id">S#63</div>
@@ -775,7 +775,7 @@ function exportPNG() {
           <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">55 ctns</span></div>
           <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">7,286</span></div>
         </div>
-        <div class="ship-notes">Vessel ETD 12 Nov 2026 · ETA Port Klang 11 Nov 2026</div>
+        <div class="ship-notes">Vessel ETD 14 Nov 2026 · ETA Port Klang 11 Nov 2026</div>
         <button class="items-toggle" onclick="toggleItems(this)">
           <span>13 SKUs · 7,286 cells total</span>
           <svg class="toggle-arr" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -800,25 +800,25 @@ function exportPNG() {
         </div>
       </div>
 
-      <div class="ship-card status-factory">
+      <div class="ship-card status-transit">
         <div class="ship-head">
           <div><div class="ship-id">S#62</div><div class="ship-po">CKD 2026-13</div></div>
-          <span class="status-pill factory">Production in progress</span>
+          <span class="status-pill transit">Enroute to China Port</span>
         </div>
         <div class="tl-wrap"><div class="tl">
-            <div class="tl-track"><div class="tl-fill" style="width:17%"></div></div>
-            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At Factory</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route to<br>China Port</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">At China<br>Port</div></div>
+            <div class="tl-track"><div class="tl-fill" style="width:66%"></div></div>
+            <div class="tl-step"><div class="tl-dot done"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tl-lbl done">At Factory</div></div>
+            <div class="tl-step"><div class="tl-dot done"><svg viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5 4-4" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="tl-lbl done">En Route to<br>China Port</div></div>
+            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At China<br>Port</div></div>
             <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route<br>to MY</div></div>
             <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">Port Klang</div></div>
           </div></div>
         <div class="ship-meta">
-          <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">30 Nov 2026</span></div>
+          <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">TBC</span></div>
           <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">57 cnts</span></div>
           <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">8,871</span></div>
         </div>
-        <div class="ship-notes">Vessel ETD 14 Nov 2026 · ETA Port Klang 23 Nov 2026</div>
+        <div class="ship-notes">Enroute to China Port</div>
         <button class="items-toggle" onclick="toggleItems(this)">
           <span>8 SKUs · 8,871 cells total</span>
           <svg class="toggle-arr" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -932,7 +932,7 @@ function exportPNG() {
 <script>
 const SHIPS = [
   ['S#61','chip-transit','At China Port','18 Nov 2026'],
-  ['S#62','chip-factory','At Factory','30 Nov 2026'],
+  ['S#62','chip-transit','At China Port','TBC'],
   ['S#63','chip-factory','At Factory','TBC'],
   ['S#64','chip-factory','At Factory','TBC']
 ];

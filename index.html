@@ -635,8 +635,8 @@ function exportPNG() {
       <div class="report-title">CKD China Battery Shipment Status</div>
       <div class="report-meta">
         <span class="meta-chip">Updated <strong>18 Nov 2026</strong></span>
-        <span class="meta-chip"><strong>5</strong> Active Shipments</span>
-        <span class="meta-chip"><strong>16,157</strong> Units in Pipeline</span>
+        <span class="meta-chip"><strong>4</strong> Active Shipments</span>
+        <span class="meta-chip"><strong>36,473</strong> Units in Pipeline</span>
       </div>
     </div>
   </div>
@@ -691,7 +691,7 @@ function exportPNG() {
       <thead>
         <tr class="matrix-hdr-top">
           <th rowspan="2" class="matrix-sku-hdr">SKU / Model</th>
-          <th colspan="5" class="matrix-ships-span">Incoming by Shipment</th>
+          <th colspan="4" class="matrix-ships-span">Incoming by Shipment</th>
           <th rowspan="2" class="matrix-total-hdr">Total<br>Incoming<br>Cells</th>
           <th rowspan="2" class="matrix-notes-hdr">Customer / Notes</th>
         </tr>
@@ -715,7 +715,7 @@ function exportPNG() {
               <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">01 Dec 2026</span></div>
             </th>
             <th class="ship-col factory-col">
-              <div class="scol-id">S#63</div>
+              <div class="scol-id">S#63 & 64</div>
               <div class="scol-status factory-lbl">At Factory</div>
               <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-14</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">28 Nov 2026</span></div>
@@ -724,18 +724,9 @@ function exportPNG() {
               <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">TBC</span></div>
             </th>
             <th class="ship-col factory-col">
-              <div class="scol-id">S#64</div>
+              <div class="scol-id">S#65 & 66</div>
               <div class="scol-status factory-lbl">At Factory</div>
-              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-15</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">21 Dec 2026</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">TBC</span></div>
-              <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">TBC</span></div>
-              <div class="scol-date-row scol-date-eta"><span class="scol-date-label">ETA CKD</span><span class="scol-date-val">TBC</span></div>
-            </th>
-            <th class="ship-col factory-col">
-              <div class="scol-id">S#65</div>
-              <div class="scol-status factory-lbl">At Factory</div>
-              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-15</span></div>
+              <div class="scol-date-row"><span class="scol-date-label">PO Ref.</span><span class="scol-date-val">CKD 2026-14</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Fac Ready</span><span class="scol-date-val">21 Dec 2026</span></div>
               <div class="scol-date-row"><span class="scol-date-label">Vessel ETD</span><span class="scol-date-val">TBC</span></div>
               <div class="scol-date-row"><span class="scol-date-label">ETA Port KL</span><span class="scol-date-val">TBC</span></div>
@@ -849,7 +840,7 @@ function exportPNG() {
 
       <div class="ship-card status-factory">
         <div class="ship-head">
-          <div><div class="ship-id">S#63</div><div class="ship-po">CKD 2026-14</div></div>
+          <div><div class="ship-id">S#63 & 64</div><div class="ship-po">CKD 2026-14</div></div>
           <span class="status-pill factory">Production in progress</span>
         </div>
         <div class="tl-wrap"><div class="tl">
@@ -863,15 +854,41 @@ function exportPNG() {
         <div class="ship-meta">
           <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">TBC</span></div>
           <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">—</span></div>
-          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">0</span></div>
+          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">10,373</span></div>
         </div>
         <div class="ship-notes">Production in progress</div>
-
+        <button class="items-toggle" onclick="toggleItems(this)">
+          <span>18 SKUs · 10,373 cells total</span>
+          <svg class="toggle-arr" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="items-body">
+          <table class="items-tbl"><thead><tr><th>SKU</th><th>Customer / Notes</th><th>Qty</th></tr></thead>
+            <tbody>
+              <tr><td><span class="sku-badge">KAP 1</span></td><td>—</td><td>2,000</td></tr>
+              <tr><td><span class="sku-badge">KAP 2</span></td><td>—</td><td>2,000</td></tr>
+              <tr><td><span class="sku-badge">KAP 3</span></td><td><div class="note-txt">Active - Intutive = 174 cells; G-Power = 174 cells; EPE - Sarawak = 174 cells; Others = 778 cells</div></td><td>1,300</td></tr>
+              <tr><td><span class="sku-badge">KAP 4</span></td><td><div class="note-txt">Active - Intutive = 174 cells; Voltz - Medtronic = 87 cells; Precious Power = 96 cells; Others = 343 cells</div></td><td>700</td></tr>
+              <tr><td><span class="sku-badge">KAP 5</span></td><td><div class="note-txt">Carpeton - Vitagen = 87 cells; Lotus - NXP = 96 cells</div></td><td>200</td></tr>
+              <tr><td><span class="sku-badge">KAP 6</span></td><td><div class="note-txt">Active - TF AMD = 174 cells; Savelite = 87 cells</div></td><td>300</td></tr>
+              <tr><td><span class="sku-badge">KAP 25</span></td><td><div class="note-txt">IT Usaha - Aims Cyberjaya</div></td><td>174</td></tr>
+              <tr><td><span class="sku-badge">KAP 35</span></td><td><div class="note-txt">CBH - Mega Steel, Banting</div></td><td>174</td></tr>
+              <tr><td><span class="sku-badge">KAP 100</span></td><td><div class="note-txt">CBH - MY08, Bridge DC banting</div></td><td>174</td></tr>
+              <tr><td><span class="sku-badge">L30P</span></td><td>—</td><td>180</td></tr>
+              <tr><td><span class="sku-badge">KPX 20</span></td><td>—</td><td>420</td></tr>
+              <tr><td><span class="sku-badge">KPX 30</span></td><td>—</td><td>840</td></tr>
+              <tr><td><span class="sku-badge">KPX 40</span></td><td>—</td><td>525</td></tr>
+              <tr><td><span class="sku-badge">KPX 50</span></td><td>—</td><td>315</td></tr>
+              <tr><td><span class="sku-badge">KPX 70</span></td><td>—</td><td>525</td></tr>
+              <tr><td><span class="sku-badge">KPX 120</span></td><td>—</td><td>315</td></tr>
+              <tr><td><span class="sku-badge">KPX 140</span></td><td><div class="note-txt">Express Mission - CDC Terengganu = 105 cells</div></td><td>105</td></tr>
+              <tr><td><span class="sku-badge">KPX 210</span></td><td><div class="note-txt">SIME Darby Industrial</div></td><td>126</td></tr>
+            </tbody></table>
+        </div>
       </div>
 
       <div class="ship-card status-factory">
         <div class="ship-head">
-          <div><div class="ship-id">S#64</div><div class="ship-po">CKD 2026-15</div></div>
+          <div><div class="ship-id">S#65 & 66</div><div class="ship-po">CKD 2026-14</div></div>
           <span class="status-pill factory">Production in progress</span>
         </div>
         <div class="tl-wrap"><div class="tl">
@@ -885,32 +902,35 @@ function exportPNG() {
         <div class="ship-meta">
           <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">TBC</span></div>
           <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">—</span></div>
-          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">0</span></div>
+          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">9,943</span></div>
         </div>
         <div class="ship-notes">Production in progress</div>
-
-      </div>
-
-      <div class="ship-card status-factory">
-        <div class="ship-head">
-          <div><div class="ship-id">S#65</div><div class="ship-po">CKD 2026-15</div></div>
-          <span class="status-pill factory">Production in progress</span>
+        <button class="items-toggle" onclick="toggleItems(this)">
+          <span>17 SKUs · 9,943 cells total</span>
+          <svg class="toggle-arr" viewBox="0 0 16 16" fill="none"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="items-body">
+          <table class="items-tbl"><thead><tr><th>SKU</th><th>Customer / Notes</th><th>Qty</th></tr></thead>
+            <tbody>
+              <tr><td><span class="sku-badge">KAP 2</span></td><td>—</td><td>2,000</td></tr>
+              <tr><td><span class="sku-badge">KAP 3</span></td><td>—</td><td>1,250</td></tr>
+              <tr><td><span class="sku-badge">KAP 4</span></td><td><div class="note-txt">Okiye - TF AMD = 174 cells; VOLTZ Engrg = 87; Bersy - NXP = 87 &amp; Others</div></td><td>1,250</td></tr>
+              <tr><td><span class="sku-badge">KAP 6</span></td><td><div class="note-txt">ASPL = 87 cells; Okiye = 168 cells</div></td><td>255</td></tr>
+              <tr><td><span class="sku-badge">KAP 8</span></td><td><div class="note-txt">Okiye - TF AMD = 174 cells; Greenbay - Micron = 174 &amp; Others</div></td><td>335</td></tr>
+              <tr><td><span class="sku-badge">KAP 15</span></td><td><div class="note-txt">Okiye - TF AMD = 174 cells</div></td><td>174</td></tr>
+              <tr><td><span class="sku-badge">KAP 40</span></td><td><div class="note-txt">Active Hi-Tech - TF AMD = 174 cells</div></td><td>174</td></tr>
+              <tr><td><span class="sku-badge">L150P</span></td><td><div class="note-txt">Letrik Seri - Sg. Burung Spare Part</div></td><td>11</td></tr>
+              <tr><td><span class="sku-badge">KPX 20</span></td><td>—</td><td>840</td></tr>
+              <tr><td><span class="sku-badge">KPX 30</span></td><td>—</td><td>840</td></tr>
+              <tr><td><span class="sku-badge">KPX 40</span></td><td>—</td><td>630</td></tr>
+              <tr><td><span class="sku-badge">KPX 50</span></td><td>—</td><td>525</td></tr>
+              <tr><td><span class="sku-badge">KPX 70</span></td><td>—</td><td>525</td></tr>
+              <tr><td><span class="sku-badge">KPX 100</span></td><td><div class="note-txt">R&amp;K = 42 cells</div></td><td>42</td></tr>
+              <tr><td><span class="sku-badge">KPX 120</span></td><td><div class="note-txt">Scott &amp; English = 126 cells; HSP Power = 168 cells &amp; Others</div></td><td>210</td></tr>
+              <tr><td><span class="sku-badge">KPX 140</span></td><td><div class="note-txt">Scott &amp; English = 126 cells; HSP Power = 189 cells &amp; Others</div></td><td>210</td></tr>
+              <tr><td><span class="sku-badge">KPX 210</span></td><td><div class="note-txt">IT Usaha - AIMS, Cyberjaya = 672 cells (2Terminal)</div></td><td>672</td></tr>
+            </tbody></table>
         </div>
-        <div class="tl-wrap"><div class="tl">
-            <div class="tl-track"><div class="tl-fill" style="width:17%"></div></div>
-            <div class="tl-step"><div class="tl-dot active"><svg viewBox="0 0 10 10" fill="none"><circle cx="5" cy="5" r="2.5" fill="#fff"/></svg></div><div class="tl-lbl active">At Factory</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route to<br>China Port</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">At China<br>Port</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">En Route<br>to MY</div></div>
-            <div class="tl-step"><div class="tl-dot "></div><div class="tl-lbl ">Port Klang</div></div>
-          </div></div>
-        <div class="ship-meta">
-          <div class="meta-item"><span class="meta-key">ETA CKD</span><span class="meta-val eta">TBC</span></div>
-          <div class="meta-item"><span class="meta-key">Size</span><span class="meta-val">—</span></div>
-          <div class="meta-item"><span class="meta-key">Total Cells</span><span class="meta-val">0</span></div>
-        </div>
-        <div class="ship-notes">Production in progress</div>
-
       </div>
   </div>
 
@@ -930,24 +950,34 @@ function exportPNG() {
 const SHIPS = [
   ['S#61','chip-transit','At China Port','29 Nov 2026'],
   ['S#62','chip-transit','At China Port','01 Dec 2026'],
-  ['S#63','chip-factory','At Factory','TBC'],
-  ['S#64','chip-factory','At Factory','TBC'],
-  ['S#65','chip-factory','At Factory','TBC']
+  ['S#63 & 64','chip-factory','At Factory','TBC'],
+  ['S#65 & 66','chip-factory','At Factory','TBC']
 ];
 const SKU_DATA = [
-  ['KAP 1', 2250, 2250, 0, 0, 0, 'EPE Power - RTS Johor = 1392 cells'],
-  ['KAP 2', 1500, 2500, 0, 0, 0, 'One Ocean - Sungai Rasau = 1200 cells; EPE Power - Sunway City Mall = 522 cells; EPE - RTS = 174 cells'],
-  ['KAP 3', 522, 2000, 0, 0, 0, 'PLP - Pavilion Damansara; One Ocean - Sungai Rasau 1720,Toonex Energia 87, Mega Auto 87'],
-  ['KAP 4', 400, 1000, 0, 0, 0, 'One Ocean - Sungai Rasau = 1044 cells; EPE Power - Bangsar Hill = 174 cells; Teqnida = 348 cells'],
-  ['KAP 8', 200, 344, 0, 0, 0, 'Atlantic Blue - LSS Maya 2 &amp; 3 = 174 cells; One Ocean - Sungai Rasau'],
-  ['KPX 20', 525, 0, 0, 0, 0, ''],
-  ['KPX 30', 315, 315, 0, 0, 0, ''],
-  ['KPX 40', 210, 315, 0, 0, 0, ''],
-  ['KPX 70', 210, 0, 0, 0, 0, ''],
-  ['KPX 100', 147, 147, 0, 0, 0, 'WYWIN Global = 105 cells; Hong Tak = 21 cells; Petro Aktif = 21 cells'],
-  ['KPX 120', 420, 0, 0, 0, 0, 'WYWIN Global = 210 cells; Tegap Maju = 105 cells'],
-  ['KPX 140', 378, 0, 0, 0, 0, 'Cummins Sales &amp; Services = 378 cells'],
-  ['KPX 160', 209, 0, 0, 0, 0, 'Sime Darby = 84 cells']
+  ['KAP 1', 2250, 2250, 2000, 0, 'EPE Power - RTS Johor = 1392 cells'],
+  ['KAP 2', 1500, 2500, 2000, 2000, 'One Ocean - Sungai Rasau = 1200 cells; EPE Power - Sunway City Mall = 522 cells; EPE - RTS = 174 cells'],
+  ['KAP 3', 522, 2000, 1300, 1250, 'PLP - Pavilion Damansara; One Ocean - Sungai Rasau 1720,Toonex Energia 87, Mega Auto 87; Active - Intutive = 174 cells; G-Power = 174 cells; EPE - Sarawak = 174 cells; Others = 778 cells'],
+  ['KAP 4', 400, 1000, 700, 1250, 'One Ocean - Sungai Rasau = 1044 cells; EPE Power - Bangsar Hill = 174 cells; Teqnida = 348 cells; Active - Intutive = 174 cells; Voltz - Medtronic = 87 cells; Precious Power = 96 cells; Others = 343 cells; Okiye - TF AMD = 174 cells; VOLTZ Engrg = 87; Bersy - NXP = 87 &amp; Others'],
+  ['KAP 5', 0, 0, 200, 0, 'Carpeton - Vitagen = 87 cells; Lotus - NXP = 96 cells'],
+  ['KAP 6', 0, 0, 300, 255, 'Active - TF AMD = 174 cells; Savelite = 87 cells; ASPL = 87 cells; Okiye = 168 cells'],
+  ['KAP 8', 200, 344, 0, 335, 'Atlantic Blue - LSS Maya 2 &amp; 3 = 174 cells; One Ocean - Sungai Rasau; Okiye - TF AMD = 174 cells; Greenbay - Micron = 174 &amp; Others'],
+  ['KAP 15', 0, 0, 0, 174, 'Okiye - TF AMD = 174 cells'],
+  ['KAP 25', 0, 0, 174, 0, 'IT Usaha - Aims Cyberjaya'],
+  ['KAP 35', 0, 0, 174, 0, 'CBH - Mega Steel, Banting'],
+  ['KAP 40', 0, 0, 0, 174, 'Active Hi-Tech - TF AMD = 174 cells'],
+  ['KAP 100', 0, 0, 174, 0, 'CBH - MY08, Bridge DC banting'],
+  ['KPX 20', 525, 0, 420, 840, ''],
+  ['KPX 30', 315, 315, 840, 840, ''],
+  ['KPX 40', 210, 315, 525, 630, ''],
+  ['KPX 50', 0, 0, 315, 525, ''],
+  ['KPX 70', 210, 0, 525, 525, ''],
+  ['KPX 100', 147, 147, 0, 42, 'WYWIN Global = 105 cells; Hong Tak = 21 cells; Petro Aktif = 21 cells; R&amp;K = 42 cells'],
+  ['KPX 120', 420, 0, 315, 210, 'WYWIN Global = 210 cells; Tegap Maju = 105 cells; Scott &amp; English = 126 cells; HSP Power = 168 cells &amp; Others'],
+  ['KPX 140', 378, 0, 105, 210, 'Cummins Sales &amp; Services = 378 cells; Express Mission - CDC Terengganu = 105 cells; Scott &amp; English = 126 cells; HSP Power = 189 cells &amp; Others'],
+  ['KPX 160', 209, 0, 0, 0, 'Sime Darby = 84 cells'],
+  ['KPX 210', 0, 0, 126, 672, 'SIME Darby Industrial; IT Usaha - AIMS, Cyberjaya = 672 cells (2Terminal)'],
+  ['L30P', 0, 0, 180, 0, ''],
+  ['L150P', 0, 0, 0, 11, 'Letrik Seri - Sg. Burung Spare Part']
 ];
 
 // ── Item expand/collapse ───────────────────────────────────
